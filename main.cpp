@@ -90,13 +90,13 @@ void playGame()
     while (true)
     {
         printBoard();
-        cout << "\nPlayer " << currentPlayer << "'s turn. Enter a box number (1-9): ";
+        cout << "\nPlayer " << currentPlayer << "'s turn. Enter a box number from 1 to 9: ";
         int choice;
         cin >> choice;
 
         if (!isValidMove(choice))
         {
-            cout << "Invalid move! Try again.\n";
+            cout << "Please try to Enter a valid Number: \n";
             continue;
         }
 
